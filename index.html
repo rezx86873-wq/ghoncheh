@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محصولات غنچه</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  background: #fdf7f9;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  border-bottom: 1px solid #f0e2e8;
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+  border: 3px solid #c2185b;
+  box-shadow: 0 4px 15px rgba(194, 24, 91, 0.2);
+  background: #fff;
+}
+
+header h1 {
+  color: #c2185b;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+header p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(194, 24, 91, 0.08);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  background: #f5e6ec;
+}
+
+.card h3 {
+  padding: 12px 12px 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.price {
+  padding: 0 12px;
+  color: #c2185b;
+  font-weight: bold;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.desc {
+  padding: 8px 12px 16px;
+  font-size: 0.83rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+  margin-top: 20px;
+  border-top: 1px solid #f0e2e8;
+}
+
+.contact h2 {
+  color: #c2185b;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.contact p {
+  color: #777;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-btn.primary {
+  background: #c2185b;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(194, 24, 91, 0.3);
+}
+
+.contact-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(194, 24, 91, 0.4);
+}
+
+.contact-btn.secondary {
+  background: #fff;
+  color: #c2185b;
+  border: 2px solid #c2185b;
+}
+
+.contact-btn.secondary:hover {
+  background: #fdf0f5;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #999;
+  font-size: 0.85rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.png" alt="لوگو غنچه" class="logo">
+  <h1>غنچه</h1>
+  <p>طبیعی، دست‌ساز، با عشق</p>
+</header>
+
+<main class="grid">
+
+<!-- ۱ -->
+<div class="card">
+  <img src="images/1.jpg" alt="رژلب دست‌ساز غنچه">
+  <h3>رژلب دست‌ساز غنچه</h3>
+  <p class="price">۲۳۰,۰۰۰ تومان</p>
+  <p class="desc">دارای چهار رنگ گوشتی، هالیوودی، صورتی، قرمز</p>
+</div>
+
+<!-- ۲ -->
+<div class="card">
+  <img src="images/2.jpg" alt="ضدآفتاب گیاهی غنچه">
+  <h3>ضدآفتاب گیاهی غنچه</h3>
+  <p class="price">۲۶۰,۰۰۰ تومان</p>
+  <p class="desc">تهیه شده از روغن جوانه‌ی گندم، در دو رنگ متناسب با سلیقه و نیاز شما</p>
+</div>
+
+<!-- ۳ -->
+<div class="card">
+  <img src="images/3.jpg" alt="آبرسان گیاهی غنچه">
+  <h3>آبرسان گیاهی غنچه</h3>
+  <p class="price">۱۵۰,۰۰۰ تومان</p>
+  <p class="desc">تهیه شده از بهترین روغن‌های طبیعی مانند روغن آرگان، آووکادو و ...</p>
+</div>
+
+<!-- ۴ -->
+<div class="card">
+  <img src="images/4.jpg" alt="تینت لب غنچه">
+  <h3>تینت لب غنچه</h3>
+  <p class="price">۱۰۰,۰۰۰ تومان</p>
+  <p class="desc">رنگی الهام گرفته از طبیعت، با لطافت گیلاس و ماندگاری دلنشین</p>
+</div>
+
+<!-- ۵ -->
+<div class="card">
+  <img src="images/5.jpg" alt="لوسیون ناخن غنچه">
+  <h3>لوسیون ناخن غنچه</h3>
+  <p class="price">۱۲۰,۰۰۰ تومان</p>
+  <p class="desc">یک محصول تخصصی برای تغذیه و رطوبت‌رسانی به ناخن و پوست اطراف آن</p>
+</div>
+
+<!-- ۶ -->
+<div class="card">
+  <img src="images/6.jpg" alt="ریمل دست‌ساز غنچه">
+  <h3>ریمل دست‌ساز غنچه</h3>
+  <p class="price">۶۵۰,۰۰۰ تومان</p>
+  <p class="desc">تهیه شده از مواد با کیفیت، فاقد سرب و مواد شیمیایی</p>
+</div>
+
+<!-- ۷ -->
+<div class="card">
+  <img src="images/7.jpg" alt="سرمه عربی غنچه">
+  <h3>سرمه عربی غنچه</h3>
+  <p class="price">۱۴۵,۰۰۰ تومان</p>
+  <p class="desc">رنگ مشکی و پررنگ، مناسب داخل چشم، با بافتی روان و نرم</p>
+</div>
+
+<!-- ۸ -->
+<div class="card">
+  <img src="images/8.jpg" alt="سرمه مدادی غنچه">
+  <h3>سرمه مدادی غنچه</h3>
+  <p class="price">۱۲۰,۰۰۰ تومان</p>
+  <p class="desc">مناسب داخل و پشت پلک، نوک ظریف برای کشیدن خط چشم، بدون ریزش و پخش شدن</p>
+</div>
+
+<!-- ۹ -->
+<div class="card">
+  <img src="images/9.jpg" alt="رژلب آسانسوری غنچه">
+  <h3>رژلب آسانسوری غنچه</h3>
+  <p class="price">۱۷۵,۰۰۰ تومان</p>
+  <p class="desc">بدون نیاز به تراش، مناسب کشیدن خط لب و رژلب همزمان</p>
+</div>
+
+<!-- ۱۰ -->
+<div class="card">
+  <img src="images/10.jpg" alt="کرم ترک پا غنچه">
+  <h3>کرم ترک پا غنچه</h3>
+  <p class="price">۳۰۰,۰۰۰ تومان</p>
+  <p class="desc">مناسب برای پاشنه، کف پا و نواحی خشک بدن، با بافت سبک و جذب مناسب</p>
+</div>
+
+<!-- ۱۱ -->
+<div class="card">
+  <img src="images/11.jpg" alt="بالم لب غنچه">
+  <h3>بالم لب غنچه</h3>
+  <p class="price">۱۵۰,۰۰۰ تومان</p>
+  <p class="desc">آبرسان و نرم‌کننده عمیق لب، در دو رنگ سفید و صورتی</p>
+</div>
+
+<!-- ۱۲ -->
+<div class="card">
+  <img src="images/12.jpg" alt="ژل تقویتی ابرو و مژه غنچه">
+  <h3>ژل تقویتی ابرو و مژه غنچه</h3>
+  <p class="price">۱۲۰,۰۰۰ تومان</p>
+  <p class="desc">همراهی برای داشتن ابروهای مرتب‌تر، مژه‌هایی زیباتر و سالم‌تر</p>
+</div>
+
+<!-- ۱۳ -->
+<div class="card">
+  <img src="images/13.jpg" alt="رژلب‌های ترکیبی غنچه">
+  <h3>رژلب‌های ترکیبی غنچه</h3>
+  <p class="price">۳۲۰,۰۰۰ تومان</p>
+  <p class="desc">دارای چهار رنگ، رنگ‌هایی که علاوه بر زیبایی بصری، سرشار از ویتامین است</p>
+</div>
+
+<!-- ۱۴ -->
+<div class="card">
+  <img src="images/14.jpg" alt="کرم تسکین درد غنچه">
+  <h3>کرم تسکین درد غنچه</h3>
+  <p class="price">
+    ۳۰ میلی‌گرمی: ۱۸۵,۰۰۰ تومان<br>
+    ۵۰ میلی‌گرمی: ۳۰۰,۰۰۰ تومان
+  </p>
+  <p class="desc">مناسب برای استفاده کسانی که از دردهای مزمن همچون زانو درد، کمر درد و گردن درد رنج می‌برند</p>
+</div>
+
+<!-- ۱۵ -->
+<div class="card">
+  <img src="images/15.jpg" alt="ریمل قهوه‌ای غنچه">
+  <h3>ریمل قهوه‌ای غنچه</h3>
+  <p class="price">۱۵۰,۰۰۰ تومان</p>
+  <p class="desc">با رنگ طبیعی قهوه‌ای، به ابروهای شما فرم می‌دهد و باعث می‌شود ابروها پُرتر و منظم‌تر دیده شوند</p>
+</div>
+
+<!-- ۱۶ -->
+<div class="card">
+  <img src="images/16.jpg" alt="لوسیون بدن غنچه">
+  <h3>لوسیون بدن غنچه</h3>
+  <p class="price">
+    ۳۰ میلی‌گرمی: ۲۲۰,۰۰۰ تومان<br>
+    ۵۰ میلی‌گرمی: ۳۵۰,۰۰۰ تومان
+  </p>
+  <p class="desc">محصولی مناسب برای آبرسانی، نرمی پوست، کمک به بهبود خشکی و اگزما</p>
+</div>
+
+<!-- ۱۷ -->
+<div class="card">
+  <img src="images/17.jpg" alt="خط‌چشم دست‌ساز غنچه">
+  <h3>خط‌چشم دست‌ساز غنچه</h3>
+  <p class="price">۲۶۰,۰۰۰ تومان</p>
+  <p class="desc">با رنگدانه‌های مشکی و یکدست، جلوه‌ای زیبا و یکدست به آرایش شما می‌دهد</p>
+</div>
+
+<!-- ۱۸ -->
+<div class="card">
+  <img src="images/18.jpg" alt="بادی اسپلش غنچه">
+  <h3>بادی اسپلش غنچه</h3>
+  <p class="price">
+    ۷۰ میلی‌گرمی: ۲۵۰,۰۰۰ تومان<br>
+    ۱۲۰ میلی‌گرمی: ۴۲۰,۰۰۰ تومان<br>
+    ۲۵۰ میلی‌گرمی: ۸۲۰,۰۰۰ تومان
+  </p>
+  <p class="desc">با رایحه‌ی محبوب Cool Water</p>
+</div>
+
+<!-- ۱۹ -->
+<div class="card">
+  <img src="images/19.jpg" alt="کرم معجزه‌ساز غنچه">
+  <h3>کرم معجزه‌ساز غنچه</h3>
+  <p class="price">
+    ۳۰ میلی‌گرمی: ۲۶۰,۰۰۰ تومان<br>
+    ۵۰ میلی‌گرمی: ۳۲۰,۰۰۰ تومان
+  </p>
+  <p class="desc">کمک به کاهش و از بین بردن لک‌های پوستی، حاوی ویتامین C برای روشن‌تر شدن پوست</p>
+</div>
+
+<!-- ۲۰ -->
+<div class="card">
+  <img src="images/20.jpg" alt="سرم ویتامین C هیالورونیک غنچه">
+  <h3>سرم ویتامین C هیالورونیک غنچه</h3>
+  <p class="price">۳۵۰,۰۰۰ تومان</p>
+  <p class="desc">روشن‌کننده و شفاف‌کننده پوست، کمک به کاهش لک و تیرگی، سرشار از آنتی‌اکسیدان برای محافظت از پوست</p>
+</div>
+
+<!-- ۲۱ -->
+<div class="card">
+  <img src="images/21.jpg" alt="سرم دورچشم غنچه">
+  <h3>سرم دورچشم غنچه</h3>
+  <p class="price">۳۰۰,۰۰۰ تومان</p>
+  <p class="desc">آبرسان و نرم‌کننده پوست حساس دور چشم، کمک به کاهش تیرگی و گودی زیر چشم</p>
+</div>
+
+<!-- ۲۲ -->
+<div class="card">
+  <img src="images/22.jpg" alt="ژل لیفت ابرو">
+  <h3>ژل لیفت ابرو</h3>
+  <p class="price">۱۸۰,۰۰۰ تومان</p>
+  <p class="desc">با مرتب کردن و حالت‌دهی تارهای ابرو، کمک می‌کند ابروهای خوش‌فرم و بی‌نقص و چهره‌ای شاداب‌تر داشته باشید</p>
+</div>
+
+<!-- ۲۳ -->
+<div class="card">
+  <img src="images/23.jpg" alt="مام غنچه">
+  <h3>مام غنچه</h3>
+  <p class="price">۲۵۰,۰۰۰ تومان</p>
+  <p class="desc">با ترکیبی از ژل آلوئه‌ورای طبیعی، روغن رازیانه، سفیداب و چند محصول گیاهی دیگر، مراقبتی لطیف برای پوست زیر بغل فراهم می‌کند</p>
+</div>
+
+<!-- ۲۴ -->
+<div class="card">
+  <img src="images/24.jpg" alt="انواع لاک‌های غنچه">
+  <h3>انواع لاک‌های غنچه</h3>
+  <p class="price">۱۳۵,۰۰۰ تومان</p>
+  <p class="desc">در رنگ‌بندی متنوع از رنگ‌های شاد و کیوت</p>
+</div>
+
+<!-- ۲۵ -->
+<div class="card">
+  <img src="images/25.jpg" alt="بی‌بی کرم دست‌ساز غنچه">
+  <h3>بی‌بی کرم دست‌ساز غنچه</h3>
+  <p class="price">۲۵۰,۰۰۰ تومان</p>
+  <p class="desc">بافت این کرم سبک است و در کنار پوشانندگی مناسب، ظاهر پوست را یکدست‌تر و مرتب‌تر نشان می‌دهد</p>
+</div>
+
+<!-- ۲۶ -->
+<div class="card">
+  <img src="images/26.jpg" alt="کرم بوتاکس غنچه">
+  <h3>کرم بوتاکس غنچه</h3>
+  <p class="price">
+    ۱۵ میلی‌گرمی: ۲۰۰,۰۰۰ تومان<br>
+    ۳۰ میلی‌گرمی: ۴۰۰,۰۰۰ تومان
+  </p>
+  <p class="desc">تهیه شده از بهترین روغن‌ها مانند روغن جواهر، خاویار، ابریشم</p>
+</div>
+
+<!-- ۲۷ -->
+<div class="card">
+  <img src="images/27.jpg" alt="سرم ضدجوش غنچه">
+  <h3>سرم ضدجوش غنچه</h3>
+  <p class="price">۲۱۰,۰۰۰ تومان</p>
+  <p class="desc">اگر پوستتان التهابی و حساس است و یا اگر جای جوش‌هایتان باقی مانده، این محصول برای شماست</p>
+</div>
+
+<!-- ۲۸ -->
+<div class="card">
+  <img src="images/28.jpg" alt="کرم ضدجوش غنچه">
+  <h3>کرم ضدجوش غنچه</h3>
+  <p class="price">
+    ۱۵ میلی‌گرم: ۹۰,۰۰۰ تومان<br>
+    ۳۰ میلی‌گرمی: ۱۸۰,۰۰۰ تومان
+  </p>
+  <p class="desc">محصولی برای مراقبت از پوست، با بافتی سبک و مناسب استفاده روزانه</p>
+</div>
+
+<!-- ۲۹ -->
+<div class="card">
+  <img src="images/29.jpg" alt="کرم دورچشم غنچه">
+  <h3>کرم دورچشم غنچه</h3>
+  <p class="price">
+    ۱۵ میلی‌گرمی: ۷۰,۰۰۰ تومان<br>
+    ۳۰ میلی‌گرمی: ۱۴۰,۰۰۰ تومان
+  </p>
+  <p class="desc">اگر دنبال یک روتین برای گودی، تیرگی و خطوط ریز اطراف چشمانتان بودید، این محصول برای شما ساخته شده</p>
+</div>
+
+<!-- ۳۰ -->
+<div class="card">
+  <img src="images/30.jpg" alt="کرم مرطوب‌کننده غنچه">
+  <h3>کرم مرطوب‌کننده غنچه</h3>
+  <p class="price">۲۳۰,۰۰۰ تومان</p>
+  <p class="desc">کرم مرطوب‌کننده غنچه با ترکیباتی مثل هیالورونیک اسید، پروپیلن گلایکول، کره شی‌باتر و انواع روغن‌های گیاهی مثل بادام و نارگیل تهیه شده</p>
+</div>
+
+</main>
+
+<section class="contact">
+  <h2>تماس با ما و ثبت سفارش</h2>
+  <p>برای ثبت سفارش یا مشاهده دیگر محصولات، از راه‌های زیر با ما در ارتباط باشید</p>
+  <div class="contact-buttons">
+    <a href="https://rubika.ir/njmka77" target="_blank" class="contact-btn primary">
+      💬 ثبت سفارش (ادمین فروش)
+    </a>
+    <a href="https://rubika.ir/ghoncheh_produce" target="_blank" class="contact-btn secondary">
+      📢 کانال محصولات
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© ۱۴۰۴ غنچه — تمامی حقوق محفوظ است</p>
+</footer>
+
+</body>
+</html>
